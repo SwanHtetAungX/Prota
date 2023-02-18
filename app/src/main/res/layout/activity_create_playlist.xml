@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="View Your Playlist"
+        android:onClick="moveToFavourite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitleSong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="The Hills"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song3"
+                app:layout_constraintTop_toTopOf="@+id/Song3" />
+
+            <ImageView
+                android:id="@+id/Song1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/altantiscover" />
+
+            <TextView
+                android:id="@+id/txtTitleSong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Atlantis"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song1"
+                app:layout_constraintTop_toTopOf="@+id/Song1" />
+
+            <TextView
+                android:id="@+id/txtArtistSong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Seafret"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong1"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong1" />
+
+            <ImageView
+                android:id="@+id/Song2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/Song1"
+                app:layout_constraintTop_toBottomOf="@+id/Song1"
+                app:srcCompat="@drawable/afterdarkcover" />
+
+            <TextView
+                android:id="@+id/txtTitleSong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="After Dark"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song2"
+                app:layout_constraintTop_toTopOf="@+id/Song2" />
+
+            <TextView
+                android:id="@+id/txtArtistSong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Mr.Kitty"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong2"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong2" />
+
+            <ImageView
+                android:id="@+id/Song3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/Song2"
+                app:layout_constraintTop_toBottomOf="@+id/Song2"
+                app:srcCompat="@drawable/thehillscover" />
+
+            <TextView
+                android:id="@+id/txtArtistSong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="The Weekend"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong3"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong3" />
+
+            <ImageView
+                android:id="@+id/Song4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/Song3"
+                app:layout_constraintTop_toBottomOf="@+id/Song3"
+                app:srcCompat="@drawable/hatemecover" />
+
+            <TextView
+                android:id="@+id/txtTitleSong4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Hate Me"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song4"
+                app:layout_constraintTop_toTopOf="@+id/Song4" />
+
+            <TextView
+                android:id="@+id/txtArtistSong4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Ellie Grounding"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong4"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong4" />
+
+            <ImageView
+                android:id="@+id/Song5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/Song4"
+                app:layout_constraintTop_toBottomOf="@+id/Song4"
+                app:srcCompat="@drawable/idfccover" />
+
+            <TextView
+                android:id="@+id/txtTitleSong5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Idfc"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song5"
+                app:layout_constraintTop_toTopOf="@+id/Song5" />
+
+            <TextView
+                android:id="@+id/txtArtistSong5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Black Bear"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong5"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong5" />
+
+            <ImageView
+                android:id="@+id/Song6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/Song5"
+                app:layout_constraintTop_toBottomOf="@+id/Song5"
+                app:srcCompat="@drawable/morethanuknowcover" />
+
+            <TextView
+                android:id="@+id/txtTitleSong6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="More Than You Know"
+                android:textSize="27dp"
+                app:layout_constraintStart_toEndOf="@+id/Song6"
+                app:layout_constraintTop_toTopOf="@+id/Song6" />
+
+            <TextView
+                android:id="@+id/txtArtistSong6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Axwell Λ Ingrosso"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleSong6"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSong6" />
+
+            <ImageView
+                android:id="@+id/add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="Song1"
+                android:onClick="addToFavourites"
+                app:layout_constraintStart_toEndOf="@+id/txtTitleSong1"
+                app:layout_constraintTop_toTopOf="@+id/Song1"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+            <ImageView
+                android:id="@+id/add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:contentDescription="Song2"
+                android:onClick="addToFavourites"
+                app:layout_constraintStart_toStartOf="@+id/add1"
+                app:layout_constraintTop_toBottomOf="@+id/add1"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+            <ImageView
+                android:id="@+id/add3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="92dp"
+                android:contentDescription="Song3"
+                android:onClick="addToFavourites"
+                app:layout_constraintStart_toStartOf="@+id/Song3"
+                app:layout_constraintTop_toBottomOf="@+id/add2"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+            <ImageView
+                android:id="@+id/add4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96dp"
+                android:contentDescription="Song4"
+                android:onClick="addToFavourites"
+                app:layout_constraintStart_toStartOf="@+id/add3"
+                app:layout_constraintTop_toBottomOf="@+id/add3"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+            <ImageView
+                android:id="@+id/add5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="92dp"
+                android:onClick="addToFavourites"
+                android:contentDescription="Song5"
+                app:layout_constraintStart_toStartOf="@+id/add4"
+                app:layout_constraintTop_toBottomOf="@+id/add4"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+            <ImageView
+                android:id="@+id/add6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="116dp"
+                android:contentDescription="Song6"
+                android:onClick="addToFavourites"
+                app:layout_constraintStart_toStartOf="@+id/add5"
+                app:layout_constraintTop_toBottomOf="@+id/add5"
+                app:srcCompat="@drawable/addtoplaylist" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

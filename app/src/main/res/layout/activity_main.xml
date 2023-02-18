@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/music">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/horizontalTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending Songs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/purple"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.124" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalTxt1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Song1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:onClick="handleSongSection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/atlantis" />
+
+                    <ImageView
+                        android:id="@+id/Song2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Song1"
+                        android:onClick="handleSongSection"
+                        app:layout_constraintTop_toTopOf="@id/Song1"
+                        app:srcCompat="@drawable/afterdark" />
+
+                    <ImageView
+                        android:id="@+id/Song3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Song2"
+                        android:onClick="handleSongSection"
+                        app:layout_constraintTop_toTopOf="@id/Song2"
+                        app:srcCompat="@drawable/thehills" />
+
+                    <ImageView
+                        android:id="@+id/Song4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:onClick="handleSongSection"
+                        app:layout_constraintStart_toEndOf="@id/Song3"
+                        app:layout_constraintTop_toTopOf="@id/Song3"
+                        app:srcCompat="@drawable/hateme" />
+
+                    <ImageView
+                        android:id="@+id/Song5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:onClick="handleSongSection"
+                        app:layout_constraintStart_toEndOf="@id/Song4"
+                        app:layout_constraintTop_toTopOf="@id/Song4"
+                        app:srcCompat="@drawable/idfc" />
+
+                    <ImageView
+                        android:id="@+id/Song6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="handleSongSection"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Song5"
+                        app:layout_constraintTop_toTopOf="@id/Song5"
+                        app:srcCompat="@drawable/morethanuknow" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/horizontalTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Popular Podcasts"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/purple"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/horizontalTxt1"
+                app:layout_constraintTop_toBottomOf="@id/horizontal1" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal2"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalTxt2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Podcast1"
+                        android:layout_width="wrap_content"
+                        android:onClick="handlePodcastSection"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/procrastination" />
+
+                    <ImageView
+                        android:id="@+id/Podcast2"
+                        android:onClick="handlePodcastSection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Podcast1"
+                        app:layout_constraintTop_toTopOf="@id/Podcast1"
+                        app:srcCompat="@drawable/stevejob" />
+
+                    <ImageView
+                        android:id="@+id/Podcast3"
+                        android:layout_width="wrap_content"
+                        android:onClick="handlePodcastSection"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Podcast2"
+                        app:layout_constraintTop_toTopOf="@id/Podcast2"
+                        app:srcCompat="@drawable/ai" />
+
+                    <ImageView
+                        android:id="@+id/Podcast4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="handlePodcastSection"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Podcast3"
+                        app:layout_constraintTop_toTopOf="@id/Podcast3"
+                        app:srcCompat="@drawable/richdad" />
+
+                    <ImageView
+                        android:id="@+id/Podcast5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:onClick="handlePodcastSection"
+                        app:layout_constraintStart_toEndOf="@id/Podcast4"
+                        app:layout_constraintTop_toTopOf="@id/Podcast4"
+                        app:srcCompat="@drawable/cryptocurrency" />
+
+                    <ImageView
+                        android:id="@+id/Podcast6"
+                        android:layout_width="wrap_content"
+                        android:onClick="handlePodcastSection"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        app:layout_constraintStart_toEndOf="@id/Podcast5"
+                        app:layout_constraintTop_toTopOf="@id/Podcast5"
+                        app:srcCompat="@drawable/meditation" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@id/scrollView2"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="moveToSearchActivity"
+        app:layout_constraintStart_toEndOf="@+id/playListButton"
+        app:layout_constraintTop_toTopOf="@id/homeButton"
+        app:srcCompat="@drawable/searchicon" />
+
+    <ImageButton
+        android:id="@+id/playListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:onClick="moveToPlaylistActivity"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:srcCompat="@drawable/playlisticon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
